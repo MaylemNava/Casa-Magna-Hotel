@@ -8,20 +8,25 @@
 
 .alinear {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: white;
     margin: 50px;
     border: 1px solid gray;
-   
+    width: 293%;
+    
 
 }
 
 .linea {
 
-    margin: 50px;
-    width: ;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
+    width: 300%;
+    padding: 100px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -137,6 +142,13 @@ div:hover{transform: scale(1.1,1.1)
     margin-left:100px;
 }
 
+.flex-art{
+    margin: 0 10px;
+    width: 200px;
+    height: 500px;
+    
+}
+
 #d2{
 background-color: gray;
 width: 300%;
@@ -147,7 +159,7 @@ height: 200px;
 
 .d3{
 
-    width: 100%;
+    width: 300%;
     height: 100px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -163,14 +175,12 @@ height: 200px;
     @keyframes anime{
     from{background-color: white;}
     to {background-color: rgb(175, 175, 175);}
-
-
     
 }
 
 .d4{
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 100px ;
+    margin-bottom:50px ;
 }
 
 .d5{
@@ -178,6 +188,30 @@ height: 200px;
     margin-top: 30px; 
     margin-bottom:30px;
 }
+
+/*Breakpoints*/
+/*Mobil*/
+@media screen and (min-width:600px) and (max-width:768px) {
+    body{
+        background-color: bisque;
+}
+}
+
+/*Tablet*/
+@media screen and (max-width:600px) {
+    body{
+        background-color: aquamarine;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width:768px) and (max-width:850px) {
+    body{
+        background-color: cadetblue;
+    }
+}
+
+
 
 
             
