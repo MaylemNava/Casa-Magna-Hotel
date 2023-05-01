@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.alinear {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 50px;
+    border: 1px solid gray;
+   
+
+
+
+}
+
+.linea {
+
+    margin: 50px;
+    width: ;
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+nav>a {
+    margin-right: 100px;
+    margin-left: 60px;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: darkmagenta;
+}
+
+/*p::selection{ backround-color:}*/
+cuando seleccionamos el texto lo sobrea de x color .galeria {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.grande {
+    width: 300%;
+    height: 500px;
+    background-color:white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2em;
+    
+
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-delay: 4s;
+    animation-iteration-count: initial;
+
+}
+
+@keyframes anime{
+    from{background-color: white;}
+    to {background-color: rgb(175, 175, 175);}
+
+}
+
+.img {
+    width: calc(100%/6);
+
+
+}
+
+.puntos {
+    width: 300%;
+    height: 2em;
+    background-color: white;
+    padding: .4em;
+    
+  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.punto {
+    width: .1em;
+    background-color: gray;
+    margin: .2em;
+
+}
+
+/*Clase 4CSS Transformacion: Cuando pasemos por encima de una imagnes se agrande hay que agregar en el TPO
+
+div:hover{transform: scale(1.1,1.1)
+
+    Transicion
+
+    div{
+        width: 100px;
+        height: 100px;
+        bacround-color:
+        border: 1px solid black;
+        transition-property:width;
+        transition-duration: 5s;
+        {
+
+     div:hover {
+        width:300px
+        {       
+
+            HIpervinculos; animacion para el hipervinculo
+
+            a{
+                backroun-color:;
+                color:;
+                padding:;
+                border: 1px solid black;
+
+                transition.property:all;
+                transition-duration: 5s;
+                transition-timing-function:ease-in;
+
+                {*/
+
+.d1{
+   
+    width: 300px;
+    height: 500px;
+    display: inline-block ;
+    border: 1px solid gray;
+    margin-top: 50px;
+    margin-left:100px;
+}
+
+#d2{
+background-color: gray;
+width: 300%;
+height: 200px;
+
+
+}
+
+.d3{
+
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left:100px;
+    
+}
+
+.d4{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.d5{
+
+    margin-top: 30px; 
+    margin-bottom:30px;
+}
+
+
+            
+
