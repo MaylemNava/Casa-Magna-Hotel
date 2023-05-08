@@ -21,27 +21,43 @@
 
 /* BARRA NAVEGACION */
 
-.container-lista ul{
-    text-align: center;
-    font-size: 1.2rem;
+nav{
+    background-color: #A9794C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
+    color: white;
 }
 
-.container-lista ul li{
-    display: inline-block;
-    margin: 0 1.7rem;
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.container-lista a{
-    color: chocolate;
+.lista-nav li{
+    width: 70px;
 }
 
-.container-lista a:hover{
-    color: rgb(39, 36, 29);
-    transition: 0.4s;
+.lista-nav a{
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 20px 15px;
+    transition: 0.5s;
+    color: white;
+}
+
+.lista-nav a:hover{
+    color: #f1c40f;
+    border-bottom: 4px #f1c40f solid;
+    transition: 0.5s;
 }
 
 @media(max-width:700px){
-      .container-lista ul{
+      .barra-nav ul{
         display: none;    
     }
 }
@@ -57,8 +73,7 @@
 hr{
     height: 1px;
     border: none;
-    color: chocolate;
-    background-color: chocolate;
+    background-color: #A9794C;
 }
 
 .container-titulo{
@@ -69,6 +84,7 @@ hr{
 
 .container-titulo h1{
     font-size: x-large;    
+    color: #A9794C;
 }
 
 
@@ -95,7 +111,7 @@ hr{
 }
 
 .tarjeta ul h2:hover{
-    color: darkgoldenrod;
+    color: #f1c40f;
     cursor: default;
 }
 
@@ -114,7 +130,7 @@ hr{
 }
 
 .lista-servicios h2{
-    color: chocolate;
+    color: #A9794C;
 }
 
 .lista-servicios li{
