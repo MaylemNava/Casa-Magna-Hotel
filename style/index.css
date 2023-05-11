@@ -56,8 +56,11 @@ nav ul{
 }
 
 @media(max-width:700px){
-      .barra-nav ul{
-        display: none;    
+      nav ul{
+        display: none;  
+    }
+    nav{
+        height: 30px;
     }
 }
 
@@ -84,11 +87,29 @@ nav ul{
 .slider li{
     list-style: none;
     width: 100%;
+    position: relative;
 }
 
 .slider img{
     width: 100%;
+    opacity: 0.8;
 }
+
+
+.texto{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+.texto p{
+    font-family: 'Permanent Marker', cursive;
+}
+
 
 @keyframes slide{
     0% {margin-left: 0%;}
@@ -104,168 +125,61 @@ nav ul{
     100% {margin-left: -300%;}
 }
 
-/*p::selection{ backround-color:}*/
-/* cuando seleccionamos el texto lo sobrea de x color .galeria {
-
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.grande {
-    width: 300%;
-    height: 500px;
-    background-color:white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-}
+@media screen and (max-width: 700px){
+    .slider{
+        width: auto;
+        margin: 15px 0;
+    }
+} 
 
 
-
-.img {
-    width: calc(100%/6);
-
-
-}
-
-.puntos {
-    width: 300%;
-    height: 2em;
-    background-color: white;
-    padding: .4em;
-    
-  
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.punto {
-    width: .1em;
-    background-color: gray;
-    margin: .2em;
-
-} */
-
-/*Clase 4CSS Transformacion: Cuando pasemos por encima de una imagnes se agrande hay que agregar en el TPO
-
-div:hover{transform: scale(1.1,1.1)
-
-    Transicion
-
-    div{
-        width: 100px;
-        height: 100px;
-        bacround-color:
-        border: 1px solid black;
-        transition-property:width;
-        transition-duration: 5s;
-        {
-
-     div:hover {
-        width:300px
-        {       
-
-            HIpervinculos; animacion para el hipervinculo
-
-            a{
-                backroun-color:;
-                color:;
-                padding:;
-                border: 1px solid black;
-
-                transition.property:all;
-                transition-duration: 5s;
-                transition-timing-function:ease-in;
-
-                {*/
-
-.d1{
-   
-    width: 300px;
-    height: 500px;
-    display: inline-block ;
-    border: 1px solid gray;
+.container-grid{
     margin-top: 50px;
-    margin-left:100px;
+    text-align: center;
 }
 
-.flex-art{
-    margin: 0 10px;
-    width: 200px;
-    height: 500px;
-    
+
+/* .container-grid h1{
+    background-color: #A9794C;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    padding-left: 50px;
+    text-align: start;
 }
 
-#d2{
-background-color: gray;
-width: 300%;
-height: 200px;
-
-
-}
-
-.d3{
-
-    width: 300%;
-    height: 100px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    animation-name: anime;
-    animation-duration: 8s;
-    animation-delay: 4s;
-    animation-iteration-count: infinite;
-}
-    @keyframes anime{
-    from{background-color: white;}
-    to {background-color: rgb(175, 175, 175);}
-    
-}
-
-.d4{
-    margin-top: 100px ;
-    margin-bottom:50px ;
-}
-
-.d5{
-
-    margin-top: 30px; 
-    margin-bottom:30px;
-}
-
+.container-grid h1:hover{
+    color: #f1c40f;
+    transition: 0.5s;
+    cursor: default;
+} */
 /*Breakpoints*/
 /*Mobil*/
-@media screen and (min-width:600px) and (max-width:768px) {
+/* @media screen and (min-width:600px) and (max-width:768px) {
     body{
         background-color: bisque;
 }
 }
 
 /*Tablet*/
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     body{
         background-color: aquamarine;
     }
-}
+} */
 
 /*Tablet*/
-@media screen and (min-width:768px) and (max-width:850px) {
+/* @media screen and (min-width:768px) and (max-width:850px) {
     body{
         background-color: cadetblue;
     }
+/* } */ 
+
+footer{
+    height: 500px;
+    background-color: red;
+    margin: 50px;
 }
-
-
 
 
             
