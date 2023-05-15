@@ -42,6 +42,10 @@ nav ul{
     width: 70px;
 }
 
+.lista-nav lis{
+    width: 120px;
+}
+
 .lista-nav a{
     font-size: 1.1rem;
     cursor: pointer;
@@ -85,6 +89,7 @@ hr{
 .container-titulo h1{
     font-size: x-large;    
     color: #A9794C;
+    
 }
 
 
@@ -216,3 +221,30 @@ footer{
         text-align: center;
     }
 }
+
+/* Solicitar mas info */
+
+.buttoninfo {
+    
+
+}
+
+.buttonlabel {
+    background-color: #e3e3e3;
+    color: #a8a8a8;
+    padding: 0;
+    display: inline-block;
+    padding: 11px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin-right: 7px;
+    border: 0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+
