@@ -82,7 +82,7 @@ nav ul{
     padding: 0;
     width: 400%;
 
-    /* animation: slide 16s infinite alternate ease-in-out; */
+    animation: slide 16s infinite alternate ease-in-out;
 
 }
 
@@ -171,11 +171,26 @@ nav ul{
     padding: 15px;
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 300px);
     column-gap: 20px;
     row-gap: 10px;
     justify-content: center;
+}
+
+@media screen and (min-width:768px) and (max-width:1020px){
+    .container-grid{
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:767px){
+    .container-grid{
+        grid-auto-rows: 300px;
+        grid-template-columns: 1fr;
+        
+    }
 }
 
 .item{
