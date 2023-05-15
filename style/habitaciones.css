@@ -42,6 +42,10 @@ nav ul{
     width: 70px;
 }
 
+.lista-nav lis{
+    width: 120px;
+}
+
 .lista-nav a{
     font-size: 1.1rem;
     cursor: pointer;
@@ -85,6 +89,7 @@ hr{
 .container-titulo h1{
     font-size: x-large;    
     color: #A9794C;
+    
 }
 
 
