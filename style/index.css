@@ -143,16 +143,17 @@ nav ul{
     background-color: #A9794C;
     padding: 35px;
     font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
 }
 
 .texto-servicios h1{
     display: block;
     margin: auto;
-    border: 3px solid white;
     width: 40%;
     color: wheat;
 }
+
 
 .texto-servicios p{
     margin-top: 25px;
