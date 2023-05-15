@@ -1,7 +1,8 @@
-*{
+html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
     margin: 0;
     padding: 0;
-    text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -47,6 +48,7 @@ nav ul{
     padding: 20px 15px;
     transition: 0.5s;
     color: white;
+    text-decoration: none;
 }
 
 .lista-nav a:hover{
@@ -80,7 +82,7 @@ nav ul{
     padding: 0;
     width: 400%;
 
-    animation: slide 16s infinite alternate ease-in-out;
+    /* animation: slide 16s infinite alternate ease-in-out; */
 
 }
 
@@ -92,7 +94,7 @@ nav ul{
 
 .slider img{
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 
@@ -104,6 +106,8 @@ nav ul{
     font-size: 2rem;
     text-align: center;
     color: black;
+    padding: 15px;
+    border: 3px solid white;
 }
 
 .texto p{
@@ -128,31 +132,127 @@ nav ul{
 @media screen and (max-width: 700px){
     .slider{
         width: auto;
-        margin: 15px 0;
     }
 } 
 
 
-.container-grid{
+.texto-servicios{
+    width: auto;
     margin-top: 50px;
+    text-align: center;
+    background-color: #A9794C;
+    padding: 35px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.texto-servicios h1{
+    display: block;
+    margin: auto;
+    border: 3px solid white;
+    width: 40%;
+    color: wheat;
+}
+
+.texto-servicios p{
+    margin-top: 25px;
+    font-size: large;
+}
+
+@media screen and (max-width:700px){
+    .texto-servicios{
+        margin-top: 15px;
+    }
+}
+
+/* SECCION GRID */
+
+.container-grid{
+    padding: 15px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.item{
+    background-color: red;
+    height: 250px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: beige;
+}
+
+.item img{
+    width: 100px;
+    height: 100px;
+}
+
+/* @media screen and (max-width:700px){
+    .container-grid
+} */
+
+/* INFRAME MAPA */
+
+.iframe-map{
     text-align: center;
 }
 
-
-/* .container-grid h1{
+.iframe-map h3{
     background-color: #A9794C;
     color: white;
-    width: 100%;
-    padding: 15px;
-    padding-left: 50px;
-    text-align: start;
+    padding: 20px;
+    font-size: 1.5rem;
+    width: 40%;
+    display: block;
+    margin: auto;
+    border: 3px solid white;
 }
 
-.container-grid h1:hover{
-    color: #f1c40f;
-    transition: 0.5s;
-    cursor: default;
-} */
+.iframe-map iframe{
+    margin-top: 1.5rem;
+}
+
+/* FOOTER */
+
+footer{
+    background: #A9794C;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.redes-sociales{
+    padding: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.redes-sociales img{
+    width: 2rem;
+    height: 2rem;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.redes-sociales img:hover{
+    background-color: rgb(128, 64, 18);
+    border-radius:30% ;
+    transition: 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
 /*Breakpoints*/
 /*Mobil*/
 /* @media screen and (min-width:600px) and (max-width:768px) {
@@ -174,13 +274,6 @@ nav ul{
         background-color: cadetblue;
     }
 /* } */ 
-
-footer{
-    height: 500px;
-    background-color: red;
-    margin: 50px;
-}
-
 
             
 
