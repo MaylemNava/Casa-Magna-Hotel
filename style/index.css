@@ -19,6 +19,12 @@ html, body{
     object-fit: contain;
 }
 
+@media screen and (max-width:768px){
+    .container-logo{
+        display: none;
+    }
+}
+
 /* BARRA NAVEGACION */
 
 nav{
@@ -57,12 +63,46 @@ nav ul{
     transition: 0.5s;
 }
 
-@media(max-width:700px){
-      nav ul{
-        display: none;  
+.burger-menu{
+    color: #f1c40f;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+      width: 100%;
+      padding: 1.2rem 1rem;
+      position: fixed;
+      z-index: 1;
     }
-    nav{
-        height: 30px;
+    nav ul {
+      position: fixed;
+      background-color: #A9794C;
+      flex-direction: column;
+      align-items: flex-start;
+      top: 75px;
+      left: 2px;
+      width: 100%;
+      text-align: center;
+      transform: translateX(-120%);
+    }
+  
+    nav ul li {
+      margin: 10px;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+      transition: transform 0.5s ease-in;
+
     }
 }
 
@@ -74,7 +114,7 @@ nav ul{
     height: 600px;
     margin: 50px auto 0;
     overflow: hidden;
-
+    z-index: 2;
 }
 
 .slider ul{

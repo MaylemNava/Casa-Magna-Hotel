@@ -19,6 +19,12 @@
     object-fit: contain;
 }
 
+@media screen and (max-width:768px){
+    .container-logo{
+        display: none;
+    }
+}
+
 /* BARRA NAVEGACION */
 
 nav{
@@ -58,6 +64,51 @@ nav ul{
     color: #f1c40f;
     border-bottom: 4px #f1c40f solid;
     transition: 0.5s;
+}
+
+.burger-menu{
+    color: #f1c40f;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+      width: 100%;
+      padding: 1.2rem 1rem;
+      position: fixed;
+      margin-top: -20px;
+      z-index: 1;
+    }
+    nav ul {
+      position: fixed;
+      background-color: #A9794C;
+      flex-direction: column;
+      top: 80px;
+      align-items: flex-start;
+      margin: 5px;
+      left: 1px;
+      width: 100%;
+      text-align: center;
+      transform: translateX(-120%);
+    }
+  
+    nav ul li {
+      margin: 10px;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+      transition: transform 0.5s ease-in;
+
+    }
 }
 
 @media(max-width:700px){
@@ -224,7 +275,7 @@ footer{
 
 /* Solicitar mas info */
 
-.buttoninfo {
+/* .buttoninfo {
     
 
 }
@@ -245,6 +296,6 @@ footer{
     overflow: hidden;
     
 
-}
+} */
 
 
