@@ -225,7 +225,7 @@ hr{
 /* SECCION FOOTER */
 
 footer{
-    background: chocolate;
+    background:  #A9794C;
     margin-top: 5rem;
     display: flex;
     justify-content: space-around;
@@ -247,7 +247,7 @@ footer{
 }
 
 .redes-sociales img:hover{
-    background-color: rgb(175, 89, 28);
+    background-color: #A9794C;
     border-radius:30% ;
     transition: 0.2s;
     overflow: hidden;
@@ -296,4 +296,4 @@ footer{
 } */
 
 
-
+/* Galeria-carrusel */
