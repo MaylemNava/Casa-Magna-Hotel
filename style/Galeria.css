@@ -142,135 +142,6 @@ hr {
 }
 
 
-/* SECCION TARJETAS HABITACIONES */
-
-.container-tarjetas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.tarjeta {
-    width: 80%;
-    height: 400px;
-    display: flex;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 0px 7px 5px #BDBDBD;
-    background-color: rgb(247, 241, 241);
-}
-
-.tarjeta ul h2:hover {
-    color: #f1c40f;
-    cursor: default;
-}
-
-
-.tarjeta img {
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.lista-servicios {
-    margin-left: 1.5rem;
-    list-style: none;
-    padding-left: 20px;
-}
-
-.lista-servicios h2 {
-    color: #A9794C;
-}
-
-.lista-servicios li {
-    margin: 25px 0;
-    color: #69615c;
-    position: relative;
-    padding-left: 30px;
-}
-
-.lista-servicios li:before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background-image: url(img/Imagenes\ Habitaciones/check-solid.svg);
-    background-size: cover;
-    background-position: center;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-
-@media (max-width:980px) {
-    .tarjeta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
-
-    .tarjeta img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-
-/* SECCION FOOTER */
-
-footer {
-    background: #A9794C;
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.2rem;
-}
-
-.redes-sociales {
-    padding: 30px;
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-.redes-sociales img {
-    width: 2rem;
-    height: 2rem;
-    padding: 25px;
-    margin-top: 10px;
-}
-
-.redes-sociales img:hover {
-    background-color: #A9794C;
-    border-radius: 30%;
-    transition: 0.2s;
-    overflow: hidden;
-}
-
-.ubicacion {
-    padding: 30px;
-}
-
-.ubicacion iframe {
-    padding-top: 20px;
-}
-
-
-@media (max-width:980px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
 /* BOTON RESERVA AHORA */
 
 .reserva {
@@ -294,8 +165,6 @@ footer {
 }
 
 /* CARRUSEL TIPO AUTOMATICO */
-
-
 
 .slider {
     width: 1280px;
@@ -362,5 +231,53 @@ footer {
 @media screen and (max-width: 700px) {
     .slider {
         width: auto;
+    }
+}
+
+/* SECCION FOOTER */
+
+footer {
+    background: #A9794C;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+.redes-sociales {
+    padding: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.redes-sociales img {
+    width: 2rem;
+    height: 2rem;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.redes-sociales img:hover {
+    background-color: #A9794C;
+    border-radius: 30%;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.ubicacion {
+    padding: 30px;
+}
+
+.ubicacion iframe {
+    padding-top: 20px;
+}
+
+
+@media (max-width:980px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
