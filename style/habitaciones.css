@@ -81,17 +81,16 @@ nav ul{
       z-index: 1;
     }
     nav ul {
-      position: fixed;
-      background-color: #A9794C;
-      flex-direction: column;
-      top: 80px;
-      align-items: flex-start;
-      margin: 5px;
-      left: 1px;
-      width: 100%;
-      text-align: center;
-      transform: translateX(-120%);
-    }
+        position: fixed;
+        background-color: #A9794C;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 75px;
+        left: 2px;
+        width: 100%;
+        text-align: center;
+        transform: translateX(-120%);
+      }
   
     nav ul li {
       margin: 10px;
