@@ -81,16 +81,17 @@ nav ul {
     }
 
     nav ul {
-          position: fixed;
-          background-color: #A9794C;
-          flex-direction: column;
-            align-items: flex-start;
-          top: 75px;
-          left: 2px;
-          width: 100%;
-          text-align: center;
-          transform: translateX(-120%);
-      }
+        position: fixed;
+        background-color: #A9794C;
+        flex-direction: column;
+        top: 80px;
+        align-items: flex-start;
+        margin: 5px;
+        left: 1px;
+        width: 100%;
+        text-align: center;
+        transform: translateX(-120%);
+    }
 
     nav ul li {
         margin: 10px;
@@ -141,7 +142,7 @@ hr {
 }
 
 
-/* SECCION TARJETAS HABITACIONES */
+/* CONTAINER */
 
 .container-tarjetas {
     width: 100%;
@@ -220,6 +221,32 @@ hr {
         margin-bottom: 10px;
     }
 }
+
+
+/* BOTON SOLICITA INFORMACION */
+
+.buttoninfo {
+    
+
+}
+
+.buttonlabel {
+    background-color: #e3e3e3;
+    color: #a8a8a8;
+    padding: 0;
+    display: inline-block;
+    padding: 11px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin-right: 7px;
+    border: 0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    
+
+} 
 
 
 /* SECCION FOOTER */
