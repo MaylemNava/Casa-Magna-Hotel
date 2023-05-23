@@ -256,15 +256,6 @@ footer {
 }
 
 
-.ubicacion {
-    padding: 30px;
-}
-
-.ubicacion iframe {
-    padding-top: 20px;
-    cursor: pointer
-
-
 .redes-sociales img:hover {
     cursor: pointer;
     transform: scale(1.4);
