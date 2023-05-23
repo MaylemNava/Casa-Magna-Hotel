@@ -257,6 +257,7 @@ footer {
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
+    color: white;
 }
 
 .redes-sociales {
@@ -267,26 +268,19 @@ footer {
 }
 
 .redes-sociales img {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     padding: 25px;
     margin-top: 10px;
 }
 
+
 .redes-sociales img:hover {
-    background-color: #A9794C;
-    border-radius: 30%;
-    transition: 0.2s;
-    overflow: hidden;
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: 0.4s;
 }
 
-.ubicacion {
-    padding: 30px;
-}
-
-.ubicacion iframe {
-    padding-top: 20px;
-}
 
 
 @media (max-width:980px) {
