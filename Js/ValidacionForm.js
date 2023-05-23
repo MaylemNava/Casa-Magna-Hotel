@@ -1,12 +1,19 @@
-// Obtenemos valores de los campos
-var nombre = document.getElementById('nombre').value;
-var celular = document.getElementById('celular').value;
-var correo = document.getElementById('correo').value;
-var mensaje = document.getElementById('mensaje').value;
+const $form = document.querySelector('#form')
+$form.addEventListener('submit', handleSubmit)
 
-// Validacion de los campos que no esten vacios (Con required se hace en html)
-
-if (nombre.trim() === '' || celular.trim() === '' || correo.trim() === '' || mensaje.trim() === ''){
-    alert("Por favor, completa todos los campos")
-    return;
+ async function handleSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    
+if (response.ok){
+    this.reset()
+    alert('Gracias por contactarnos')
+}
 }

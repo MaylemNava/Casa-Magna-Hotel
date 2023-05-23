@@ -46,17 +46,17 @@
     </div>
 
 <body>
-    <form class="formulario">
+    <form id="form" class="formulario" action="https://formspree.io/f/meqwwegn"
+    method="POST">
         <label for="nombre"></label>
         <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-        <label for="numero"></label>
-        <input type="text" name="numero" id="numero" placeholder="Celular">
         <label for="email"></label>
         <input type="email" name="email" id="email" required placeholder="Email">
         <label for="texto-campo"></label>
         <textarea name="texto-campo" id="texto" placeholder="Mensaje" cols="30" rows="10"></textarea>
         <input type="submit" name="enviar" id="enviar" value="Enviar" class="boton-enviar">
     </form>
+
 <footer>
     <div class="redes-sociales">
         <p> <b>Visita nuestras redes sociales</b></p>
@@ -71,5 +71,6 @@
 </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="js/MenuHam.js"></script>
+    <script src="Js/ValidacionForm.js"></script>
 </body>
 </html>
