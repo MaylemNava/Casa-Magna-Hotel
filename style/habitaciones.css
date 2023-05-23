@@ -81,17 +81,16 @@ nav ul {
     }
 
     nav ul {
-        position: fixed;
-        background-color: #A9794C;
-        flex-direction: column;
-        top: 80px;
-        align-items: flex-start;
-        margin: 5px;
-        left: 1px;
-        width: 100%;
-        text-align: center;
-        transform: translateX(-120%);
-    }
+          position: fixed;
+          background-color: #A9794C;
+          flex-direction: column;
+            align-items: flex-start;
+          top: 75px;
+          left: 2px;
+          width: 100%;
+          text-align: center;
+          transform: translateX(-120%);
+      }
 
     nav ul li {
         margin: 10px;
@@ -268,99 +267,5 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-}
-
-/* BOTON RESERVA AHORA */
-
-.reserva {
- background-color: #e3e3e3;
-    color: #a8a8a8;
-    display: inline-block;
-    padding: 11px 80px;
-    margin: 15px;
-    margin-left: 800px;
-    border:0;
-   
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden; 
-    cursor: pointer;  
-}
-
-.boton {
-    
-}
-
-/* CARRUSEL TIPO AUTOMATICO */
-
-
-
-.slider {
-    width: 1280px;
-    height: 600px;
-    margin: 50px auto 0;
-    overflow: hidden;
-    z-index: 2;
-}
-
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: slide 16s infinite alternate ease-in-out;
-
-}
-
-.slider li {
-    list-style: none;
-    width: 100%;
-    position: relative;
-}
-
-.slider img {
-    width: 100%;
-    opacity: 0.7;
-}
-
-@keyframes slide {
-    0% {
-        margin-left: 0%;
-    }
-
-    20% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -300%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .slider {
-        width: auto;
     }
 }
