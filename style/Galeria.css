@@ -145,23 +145,23 @@ hr {
 /* BOTON RESERVA AHORA */
 
 .reserva {
-    background-color: #e3e3e3;
-    color: rgb(187, 184, 184);
+ background-color: #e3e3e3;
+    color: #a8a8a8;
     display: inline-block;
-    width: 105px;
-    font-weight: 500px;
-    padding: 15px 30px;
-    margin: 50px 850px;
+    padding: 11px 80px;
+    margin: 15px;
+    margin-left: 800px;
+    border:0;
+   
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     position: relative;
     overflow: hidden; 
     cursor: pointer;  
 }
 
-a:hover {
-background-color: #e3e3e3;
-border: 1px solid rgb(187, 184, 184);
-color: gray ;
+.boton {
+    
 }
 
 /* CARRUSEL TIPO AUTOMATICO */
