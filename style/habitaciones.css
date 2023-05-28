@@ -107,12 +107,12 @@ nav ul {
     }
 }
 
-@media(max-width:700px) {
+/* @media(max-width:700px) {
     .barra-nav ul {
         display: none;
 
     }
-}
+} */
 
 /* SECCION PRINCIPAL */
 
