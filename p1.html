@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hotel, hoteles, viaje, reservas, vacaciones, relax, descanso travel, vacations">
+    <meta name="descripcion" content="reserva de hotel, vacaciones, descanso">
+    <link rel="stylesheet" href="style/habitaciones.css">
+    <link rel="icon" href="img/Gold Luxury Real Estate Agency Logo.png">
+    <title>Habitaciones Casa Magna Hotel</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-logo">
+            <img src="img/Gold Luxury Real Estate Agency Logo.png" alt="logo hotel">
+        </div>
+        <nav class="barra-nav" id="nav-links">
+            <!-- LINKS -->
+            <ul class="lista-nav">
+                <li><a href="index.html" class="links">Inicio</a></li>
+                <li><a href="Galerias.html" class="links">Galeria</a></li>
+                <li><a href="Eventos.html" class="links">Eventos</a></li>
+                <li><a href="ContactoBootstrap.html" class="links">Contacto</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="barras" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+    </header>
+    <div class="separacion">
+        <hr>
+    </div>
+    <div class="container-titulo">
+        <div class="titulo">
+            <h1>HABITACIONES</h1>
+        </div>
+    </div>
+    <div class="separacion">
+        <hr>
+    </div>
+    <article class="article-container">
+        <div class="container-tarjetas">
+            <div class="tarjeta" v-for="habitacion in habitaciones">
+                <img :src="habitacion.imagen" :alt="habitacion.nombre">
+                <ul class="lista-servicios">
+                    <h2>{{ habitacion.nombre }}</h2>
+                    <li v-for="servicio in habitacion.servicios">{{ servicio }}</li>
+                    <li>Precio: {{ habitacion.precio }}</li>
+                </ul>
+                <button class="btn-eliminar" @click="eliminarHabitacion(habitacion.id)">Eliminar</button>
+                <a class="btn-editar"
+                    :href="'producto_editar.html?id=' + habitacion.id + '&nombre=' + habitacion.nombre + '&precio=' + habitacion.precio + '&stock=' + habitacion.stock + '&imagen=' + habitacion.imagen">Editar</a>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="redes-sociales">
+            <p><b>Visita nuestras redes sociales</b></p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/Iconos redes/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/Iconos redes/instagram.png"
+                    alt="Instagram"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="img/Iconos redes/whatsapp.png"
+                    alt="Whatsapp"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                habitaciones: [
+                    {
+                        nombre: 'Habitacion Estandar',
+                        servicios: ['Cafe', 'Estacionamientos', 'Tv led', 'WiFi', 'Baños privados'],
+                        precio: 100,
+                        imagen: 'img/Imagenes Habitaciones/HabEstandar.jpg'
+                    },
+                    {
+                        nombre: 'Habitacion Familiar',
+                        servicios: ['Cafe - Bar', 'Estacionamientos', 'Tv 4K', 'WiFi', 'Aire acondicionado', 'Baños privados', '4 camas'],
+                        precio: 200,
+                        imagen: 'img/Imagenes Habitaciones/HabDoble.jpg'
+                    },
+                    {
+                        nombre: 'Habitacion Ejecutiva',
+                        servicios: ['Desayuno - Buffet', 'Estacionamientos', 'Tv 4k', 'WiFi', 'Aire acondicionado', 'Baños privados', 'Camas dos plazas'],
+                        precio: 300,
+                        imagen: 'img/Imagenes Habitaciones/HabEjecutiva.jpg'
+                    },
+                    {
+                        nombre: 'Habitacion Especial',
+                        servicios: ['Buffet Libre', 'Estacionamientos Privado', 'Tv 4k - Consola de juegos', 'WiFi', 'Aire acondicionado', 'Baños privados - Jacuzzi', 'Terraza Privada'],
+                        precio: 400,
+                        imagen: 'img/Imagenes Habitaciones/HabEspecial.jpg'
+                    }
+                ]
+            },
+            methods: {
+                eliminarHabitacion(id) {
+                    // Lógica para eliminar la habitación con el ID especificado
+                    // Puedes implementar aquí tu propia lógica para eliminar la habitación del arreglo
+                    this.habitaciones = this.habitaciones.filter(habitacion => habitacion.id !== id);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
